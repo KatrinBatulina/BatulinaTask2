@@ -1,5 +1,8 @@
 package com.company;
+
 import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Main {
 
@@ -8,7 +11,7 @@ public class Main {
 
 //Задание № 1
 
-        /*Scanner scanner = new Scanner(System.in);
+      /*  Scanner scanner = new Scanner(System.in);
         System.out.println("введите длину массива");
         int sLength = scanner.nextInt();
         String[] array = new String[sLength];
@@ -58,7 +61,7 @@ public class Main {
 
 //Задание № 3
 
-       /* Scanner scanner = new Scanner(System.in);
+      /*  Scanner scanner = new Scanner(System.in);
         System.out.println("кол-во элементов:");
         int n = scanner.nextInt();
         String[] stringArray = new String[n];
@@ -74,18 +77,18 @@ public class Main {
         for (int i = 0; i < stringArray.length; i++) {
             if (stringArray[i].length() < averageLength) {
                 System.out.println("Число с длиной меньше средней: " + stringArray[i]);
-                System.out.println("Длина числа: "+stringArray[i].length());
+                System.out.println("Длина числа: " + stringArray[i].length());
             }
             if (stringArray[i].length() > averageLength) {
                 System.out.println("Число с длиной больше средней: " + stringArray[i]);
-                System.out.println("Длина числа: "+stringArray[i].length());
+                System.out.println("Длина числа: " + stringArray[i].length());
             }
         }*/
 
 
 //Задание № 4
 
-       /* Scanner scanner = new Scanner(System.in);
+      /*  Scanner scanner = new Scanner(System.in);
         System.out.println("введите кол-во элементов");
         int arrayLength = scanner.nextInt();
         String[] stringArray = new String[arrayLength];
@@ -94,7 +97,7 @@ public class Main {
             stringArray[j] = scanner.next();
         }
         int min = Integer.MAX_VALUE;
-        String temp=null;
+        String temp = null;
         for (int j = 0; j < stringArray.length; j++) {
             int count = 0;
             String s = stringArray[j];
@@ -108,17 +111,17 @@ public class Main {
                     count++;
                 }
             }
-            System.out.println("количество различных цифр: "+count);
+            System.out.println("количество различных цифр: " + count);
             if (count < min) {
                 min = count;
                 temp = s;
             }
         }
-        System.out.println("первое число, в котором кол-во различных цифр минимально: "+temp);*/
+        System.out.println("первое число, в котором кол-во различных цифр минимально: " + temp);*/
 
 //Задание № 5
 
-        /*int[] arrayOfNumbers = {123, 426, 884, 976, 113, 222};
+       /* int[] arrayOfNumbers = {123, 426, 884, 976, 113, 222};
         int temp = 0;
         for (int number : arrayOfNumbers) {
             String s = Integer.toString(number);
@@ -135,7 +138,7 @@ public class Main {
 
 //Задание № 6
 
-        /*Scanner scanner = new Scanner(System.in);
+       /* Scanner scanner = new Scanner(System.in);
         System.out.println("введите числа через пробел");
         String[] str = scanner.nextLine().split(" ");
         for (String element : str) {
@@ -143,14 +146,14 @@ public class Main {
             byte[] b = element.getBytes();
             Arrays.sort(b);
             if (Arrays.equals(a, b)) {
-                System.out.println("первое число, цифры в котором идут в строгом порядке возрастания: "+element);
+                System.out.println("первое число, цифры в котором идут в строгом порядке возрастания: " + element);
                 break;
             }
         }*/
 
 //Задание № 7
 
-       /* Scanner scanner = new Scanner(System.in);
+      /*  Scanner scanner = new Scanner(System.in);
         System.out.println("введите числа через пробел");
         String[] stringArray = scanner.nextLine().split(" ");
         for (int i = 0; i < stringArray.length; i++) {
@@ -168,7 +171,7 @@ public class Main {
                 }
             }
             if (flag) {
-                System.out.println("первое число, состоящее из различных цифр: "+s);
+                System.out.println("первое число, состоящее из различных цифр: " + s);
                 break;
             }
         }*/
@@ -191,7 +194,7 @@ public class Main {
 
 //Задание № 9
 
-     /*   Scanner scanner = new Scanner(System.in);
+      /*  Scanner scanner = new Scanner(System.in);
         System.out.println("введите n");
         int n = scanner.nextInt();
         int[][] a = new int[n][n];
@@ -207,7 +210,7 @@ public class Main {
 
 //Задание № 9.1
 
-       /* Scanner scanner = new Scanner(System.in);
+      /*  Scanner scanner = new Scanner(System.in);
         System.out.println("введите размеры матрицы через Enter: ");
         int n = scanner.nextInt();
         int m = scanner.nextInt();
@@ -222,7 +225,7 @@ public class Main {
         }
         System.out.println();
         int temp;
-   // для упорядочивания строк
+        // для упорядочивания строк
         for (int row = 0; row < n; row++) {
             for (int i = 1; i < m; i++) {
                 for (int j = m - 1; j >= i; j--) {
@@ -234,7 +237,7 @@ public class Main {
                 }
             }
         }
-    // для упорядочивания столбцов
+        // для упорядочивания столбцов
         for (int column = 0; column < m; column++) {
             for (int i = 1; i < n; i++) {
                 for (int j = n - 1; j >= i; j--) {
@@ -246,7 +249,7 @@ public class Main {
                 }
             }
         }
-    //вывод матрицы
+        //вывод матрицы
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 System.out.print(matrix[i][j] + " ");
@@ -257,9 +260,9 @@ public class Main {
 
 //Задание № 9.2
 
-       /* Scanner scanner = new Scanner(System.in);
+      /*  Scanner scanner = new Scanner(System.in);
         short[][] matrix =
-                       {{1, 2, 3, 5, 8},
+                {{1, 2, 3, 5, 8},
                         {4, 5, 6, 7, 4},
                         {6, 3, 1, 9, 7},
                         {9, 0, 2, 3, 9}};
@@ -272,7 +275,7 @@ public class Main {
 
 //Задание № 9.4
 
-    /*    Scanner scanner = new Scanner(System.in);
+     /*   Scanner scanner = new Scanner(System.in);
         System.out.println("введите количество строк");
         int m = scanner.nextInt();
         System.out.println("введите количество столбцов");
@@ -304,7 +307,7 @@ public class Main {
                     sum += matrix[i][k];
                 }
             }
-            System.out.println("сумма значений между первым и вторым положительным элементами в текущей строке: "+sum);
+            System.out.println("сумма значений между первым и вторым положительным элементами в текущей строке: " + sum);
             System.out.println();
         }*/
 
@@ -323,7 +326,7 @@ public class Main {
 
 //Задание № 9.6
 
-       /* System.out.println("Введите размеры матрицы через Enter: ");
+      /*  System.out.println("Введите размеры матрицы через Enter: ");
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int m = scanner.nextInt();
@@ -355,7 +358,7 @@ public class Main {
 
 //Задание № 9.7
 
-       /* int[][] matrix =
+      /*  int[][] matrix =
                        {{1, 2, 3, 0, 4, 0},
                         {0, 0, 0, 0, 0, 0},
                         {1, 2, 3, 0, 4, 0},
@@ -414,7 +417,7 @@ public class Main {
 
 //Задание № 9.8
 
-       /* int array[][] =
+      /*  int array[][] =
                        {{1, 2, 0, 4, 6},
                         {8, 4, 7, 0, 3},
                         {0, 0, 3, 4, 8},
@@ -426,7 +429,6 @@ public class Main {
         System.out.println("Массив после перемещения 0 в конец:");
         ZeroMoving.zeroToRight(array);
         ZeroMoving.printArr(array);*/
-
 
 
     }
